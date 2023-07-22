@@ -1,0 +1,82 @@
+
+@font-face {
+    font-family: roboto;
+    src: url(../assets/fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: roboto-bold;
+    src: url(../assets/fonts/Roboto-Bold.ttf);
+}
+body{
+    font-family: roboto;
+    text-align: start;
+}
+
+.container{
+
+    box-sizing: border-box;
+    background-color: hsl(0, 0%, 100%);
+    width: 30%;
+    margin: 6rem auto;
+    padding:10px 50px;
+    padding-bottom: 50px;
+    border-radius: 25px;
+    text-align: left;
+    position: relative;
+    display: block;
+}
+
+.success{
+    position: absolute;
+    top: 3rem;
+    left: 3rem;
+    background: url(/src/assets/images/icon-success.svg);
+    width: 64px;
+    height: 64px;
+}
+.thanks{
+    font-family: roboto-bold;
+    font-size: 50px;
+    text-align: start;
+    margin-right: auto;
+    margin-top: 8rem;
+    margin-bottom: 2rem;
+}
+.msg{
+    text-align: start;
+    margin-top: 0;
+    margin-bottom: 2rem;
+}
+.dismiss-msg{
+    margin: 0 auto;
+    padding: 15px 30px;
+    width: 80%;
+    text-align: center;
+    font-family: roboto-bold;
+    border-radius: 10px;
+    font-size: small;
+    background-color: hsl(234, 29%, 20%);
+    color: white;
+}
+.dismiss-msg:hover{
+    box-shadow: 0px 4px 10px hotpink ,0px -4px 400px tomato;
+    background-image: linear-gradient(to right, hotpink, tomato);
+}
+
+@media screen and (max-width:375px) {
+    .container{
+        margin: 0;
+        width: 100%;
+        height: 100vh;
+        border-radius: 0;
+        padding-right: 1rem;
+        padding-left: 1.4rem;
+
+    }
+    .dismiss-msg{
+        margin-left:auto;
+        margin-right: auto;
+        margin-top: 8rem;
+    }
+}
